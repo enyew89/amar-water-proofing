@@ -6,11 +6,16 @@ import { stats } from "@/data/content";
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-40px" });
+  // Re-arms every time the stat scrolls into view (no `once`), so the
+  // count-up replays on each visit instead of only after page load.
+  const inView = useInView(ref, { margin: "-40px" });
   const [display, setDisplay] = useState(0);
 
   useEffect(() => {
-    if (!inView) return;
+    if (!inView) {
+      setDisplay(0); // reset so it counts up again on the next scroll-in
+      return;
+    }
     const controls = animate(0, value, {
       duration: 2,
       ease: "easeOut",

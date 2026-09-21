@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Building2 } from "lucide-react";
 import { contractors } from "@/data/content";
 
@@ -37,19 +38,47 @@ export default function Contractors() {
           transition={{ staggerChildren: 0.06 }}
           className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5"
         >
-          {contractors.map((name) => (
+          {contractors.map((c) => (
             <motion.div
-              key={name}
+              key={c.name}
               variants={{
                 hidden: { opacity: 0, y: 16 },
                 visible: { opacity: 1, y: 0 },
               }}
-              className="flex items-center gap-2.5 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 transition-all hover:border-brand-300 hover:bg-brand-50 hover:shadow-md hover:shadow-brand-100/60"
+              title={c.name}
+              className={`flex h-28 flex-col items-center justify-center gap-1.5 rounded-xl px-4 py-3 transition-all ${
+                c.dark
+                  ? "border border-brand-950 bg-brand-950 hover:shadow-lg hover:shadow-brand-950/30"
+                  : c.logo
+                    ? "border border-slate-200 bg-white hover:border-brand-300 hover:shadow-md hover:shadow-brand-100/60"
+                    : "border border-dashed border-slate-300 bg-slate-50 hover:border-brand-300"
+              }`}
             >
-              <Building2 className="h-5 w-5 shrink-0 text-brand-600" />
-              <span className="text-sm font-semibold text-brand-950">
-                {name}
-              </span>
+              {c.logo ? (
+                <>
+                  <Image
+                    src={c.logo}
+                    alt={`${c.name} logo`}
+                    width={c.logoWidth ?? 80}
+                    height={c.logoHeight ?? 48}
+                    className="h-auto max-h-12 w-auto object-contain"
+                  />
+                  <span
+                    className={`text-center text-xs font-semibold ${
+                      c.dark ? "text-white/80" : "text-slate-600"
+                    }`}
+                  >
+                    {c.name}
+                  </span>
+                </>
+              ) : (
+                <div className="flex flex-col items-center gap-1.5">
+                  <Building2 className="h-6 w-6 text-slate-300" />
+                  <span className="text-sm font-semibold text-slate-500">
+                    {c.name}
+                  </span>
+                </div>
+              )}
             </motion.div>
           ))}
         </motion.div>

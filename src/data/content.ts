@@ -85,17 +85,55 @@ export const stats = [
   { value: 10, suffix: " Yr", label: "Warranty" },
 ];
 
-export const contractors = [
-  "African Union",
-  "Haramaya University",
-  "Bahir Dar Stadium",
-  "Bahirdar Airport",
-  "National Palace",
-  "Prosperity Party HQ",
-  "SATCON",
-  "Tewodros Collider",
-  "Elilta Construction",
-  "Elhadar Group",
+export const contractors: {
+  name: string;
+  logo?: string;
+  logoWidth?: number;
+  logoHeight?: number;
+  dark?: boolean;
+}[] = [
+  {
+    name: "Temer Properties",
+    logo: "/contractors/temer.png",
+    logoWidth: 88,
+    logoHeight: 100,
+  },
+  {
+    name: "Pyramid",
+    logo: "/contractors/pyramid.png",
+    logoWidth: 56,
+    logoHeight: 56,
+  },
+  {
+    name: "Tilahun Abebe GC",
+    logo: "/contractors/tilahun-abebe.png",
+    logoWidth: 100,
+    logoHeight: 40,
+  },
+  {
+    name: "Tabco",
+    logo: "/contractors/tabco.png",
+    logoWidth: 100,
+    logoHeight: 35,
+    dark: true,
+  },
+  {
+    name: "Elhadar",
+    logo: "/contractors/elhadar.png",
+    logoWidth: 60,
+    logoHeight: 48,
+  },
+  {
+    name: "FE Group",
+    logo: "/contractors/fe-group.png",
+    logoWidth: 62,
+    logoHeight: 40,
+    dark: true,
+  },
+  { name: "Unity" },
+  { name: "IRO General" },
+  { name: "SATCON" },
+  { name: "TNT" },
 ];
 
 export const projects = [
@@ -136,94 +174,45 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Elhadar Project",
-    category: "Terrace Waterproofing",
-    location: "Addis Ababa",
-    image: "/elhadar.jpg",
-  },
-  {
-    id: 7,
     title: "Elilta Project",
     category: "Terrace Waterproofing",
     location: "Addis Ababa",
     image: "/elilta.jpg",
   },
   {
-    id: 8,
+    id: 7,
     title: "Haramaya University",
     category: "Commercial Roofing",
     location: "Haramaya",
     image: "/haramaya-university.jpg",
   },
   {
-    id: 9,
+    id: 8,
     title: "Mesob Project",
     category: "Full Building Solution",
     location: "Addis Ababa",
     image: "/mesob.jpg",
   },
   {
-    id: 10,
+    id: 9,
     title: "National Palace",
     category: "Structural Waterproofing",
     location: "Addis Ababa",
     image: "/national-palace.jpg",
   },
   {
-    id: 11,
-    title: "Pyramid Project",
-    category: "Basement Protection",
-    location: "Addis Ababa",
-    image: "/piramid.jpg",
-  },
-  {
-    id: 12,
+    id: 10,
     title: "Prosperity Party Headquarter",
     category: "Commercial Roofing",
     location: "Addis Ababa",
     image: "/prosperity-party-headquarter.jpg",
   },
   {
-    id: 13,
-    title: "SATCON Project",
-    category: "Full Building Solution",
-    location: "Addis Ababa",
-    image: "/satcon.jpg",
-  },
-  {
-    id: 14,
-    title: "Tabo Project",
-    category: "Terrace Waterproofing",
-    location: "Addis Ababa",
-    image: "/tabo.jpg",
-  },
-  {
-    id: 15,
-    title: "Temer Project",
-    category: "Basement Protection",
-    location: "Addis Ababa",
-    image: "/temer.jpg",
-  },
-  {
-    id: 16,
+    id: 11,
     title: "Tewodros Collider",
     category: "Structural Waterproofing",
     location: "Addis Ababa",
     image: "/tewodros-collider.jpg",
-  },
-  {
-    id: 17,
-    title: "Tilahun Abebe Building",
-    category: "Full Building Solution",
-    location: "Addis Ababa",
-    image: "/tilahun-abebe.jpg",
-  },
-  {
-    id: 18,
-    title: "Unity Project",
-    category: "Terrace Waterproofing",
-    location: "Addis Ababa",
-    image: "/unity.jpg",
   },
 ];
 
