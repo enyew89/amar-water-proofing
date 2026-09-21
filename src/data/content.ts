@@ -219,6 +219,20 @@ export const projects = [
     location: "Addis Ababa",
     image: "/tewodros-collider.jpg",
   },
+  {
+    id: 12,
+    title: "Bale Robe Airport",
+    category: "Commercial Roofing",
+    location: "Bale Robe, Oromia",
+    image: "/bale-robe-airport.jpg",
+  },
+  {
+    id: 13,
+    title: "Mekele Airport",
+    category: "Commercial Roofing",
+    location: "Mekele, Tigray",
+    image: "/mekele-airport.jpg",
+  },
 ];
 
 export const testimonials = [
