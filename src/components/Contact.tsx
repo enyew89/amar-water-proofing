@@ -31,7 +31,7 @@ export default function Contact() {
                 { icon: Phone, label: "Phone", value: company.phone, href: `tel:${company.phone.replace(/\s/g, "")}` },
                 { icon: Mail, label: "Email", value: company.email, href: `mailto:${company.email}` },
                 { icon: MapPin, label: "Address", value: company.address, href: "#" },
-                { icon: Clock, label: "Working Hours", value: "Mon – Sat: 8:00 AM – 7:00 PM", href: "#" },
+                { icon: Clock, label: "Working Hours", value: company.workingHours, href: "#" },
               ].map((item) => (
                 <li key={item.label} className="flex items-start gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-white shadow-lg shadow-brand-600/20">

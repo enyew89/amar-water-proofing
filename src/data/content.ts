@@ -3,9 +3,10 @@ export const company = {
   tagline: "Protecting Your Property, Drop by Drop",
   description:
     "Leading waterproofing specialists delivering premium protection for roofs, terraces, basements, and commercial structures. Trusted by homeowners and builders across the region.",
-  phone: "+91 98765 43210",
+  phone: "+251 911 524 838",
   email: "info@amarwaterproofing.com",
-  address: "123 Industrial Area, Sector 5, Mumbai, Maharashtra 400001",
+  address: "Lideta Ahmed Building, 9th Floor, Addis Ababa, Ethiopia",
+  workingHours: "Mon – Sat: 9:00 AM – 5:00 PM",
   yearsExperience: 15,
   projectsCompleted: 4000,
   happyClients: 1800,
@@ -131,7 +132,7 @@ export const contractors: {
     dark: true,
   },
   { name: "Unity" },
-  { name: "IRO General" },
+  { name: "Ayro General Business" },
   { name: "SATCON" },
   { name: "TNT" },
 ];
@@ -219,26 +220,26 @@ export const projects = [
 export const testimonials = [
   {
     id: 1,
-    name: "Rajesh Mehta",
-    role: "Homeowner, Andheri",
+    name: "Selamawit Haile",
+    role: "Construction Department Head, Ayro General Business",
     quote:
-      "Our terrace was leaking for years. AMAR WATER PROOFING fixed it completely in just 3 days. Three monsoons later — not a single drop inside!",
+      "Amar Water Proofing P.L.C completed 100% of the contract for the waterproofing works on the Assosa University Laboratories Project, executing everything to the agreed specification and desired quality. We gladly recommend them and hope to work together on more projects in the future.",
     rating: 5,
   },
   {
     id: 2,
-    name: "Priya Sharma",
-    role: "Architect, Design Studio",
+    name: "Ephrem Tesfaye",
+    role: "Construction Business Director, Pyramid Construction",
     quote:
-      "I recommend them to all my clients. Their technical knowledge, quality materials, and clean execution set them apart from every other contractor.",
+      "We signed a subcontracting agreement with Amar Water Proofing P.L.C to execute the waterproofing works for Worabe Industrial College in SNNPRS, Silte Zone. Our company is fully satisfied with the subcontractor's work and professionalism.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Vikram Patel",
-    role: "Builder, Patel Constructions",
+    name: "Getahun Legesse",
+    role: "Deputy Manager, Tilahun Abebe General Contractor",
     quote:
-      "We've partnered on 12 commercial projects. They always deliver on time, within budget, and their 10-year warranty gives our buyers real peace of mind.",
+      "From the Addis Ababa 40/60 project to Medawelabu University and Fincha Sugar Factory Hospital, Amar Water Proofing accomplished every waterproofing package successfully, in accordance with the signed agreement and to the satisfaction of the client. Their commitment and workmanship were outstanding, and we recommend them without hesitation for similar works.",
     rating: 5,
   },
 ];
