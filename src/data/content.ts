@@ -1,0 +1,190 @@
+export const company = {
+  name: "AMAR WATER PROOFING",
+  tagline: "Protecting Your Property, Drop by Drop",
+  description:
+    "Leading waterproofing specialists delivering premium protection for roofs, terraces, basements, and commercial structures. Trusted by homeowners and builders across the region.",
+  phone: "+91 98765 43210",
+  email: "info@amarwaterproofing.com",
+  address: "123 Industrial Area, Sector 5, Mumbai, Maharashtra 400001",
+  yearsExperience: 15,
+  projectsCompleted: 2500,
+  happyClients: 1800,
+  warrantyYears: 10,
+};
+
+export const navLinks = [
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "About", href: "#about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Testimonials", href: "#testimonials" },
+  { label: "Contact", href: "#contact" },
+];
+
+export const services = [
+  {
+    id: 1,
+    title: "Roof Waterproofing",
+    description:
+      "Complete roof membrane systems that shield against monsoon rains, UV damage, and thermal expansion for lasting protection.",
+    icon: "Home",
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+  },
+  {
+    id: 2,
+    title: "Terrace & Balcony",
+    description:
+      "Advanced liquid-applied coatings and tile-over systems to eliminate leaks and create beautiful, usable outdoor spaces.",
+    icon: "Layers",
+    image:
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+  },
+  {
+    id: 3,
+    title: "Basement Waterproofing",
+    description:
+      "Structural injection grouting, negative-side waterproofing, and drainage solutions to keep foundations dry year-round.",
+    icon: "Building2",
+    image:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+  },
+  {
+    id: 4,
+    title: "Bathroom & Kitchen",
+    description:
+      "Precision waterproofing for wet areas using SBR-modified mortars and flexible membranes to prevent seepage.",
+    icon: "Droplets",
+    image:
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+  },
+  {
+    id: 5,
+    title: "Swimming Pool",
+    description:
+      "Specialized pool liners, epoxy coatings, and crack repair systems engineered for constant water pressure.",
+    icon: "Waves",
+    image:
+      "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&q=80",
+  },
+  {
+    id: 6,
+    title: "Commercial Projects",
+    description:
+      "Large-scale waterproofing for malls, hospitals, and industrial facilities with minimal downtime and certified materials.",
+    icon: "Factory",
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+  },
+];
+
+export const stats = [
+  { value: "15+", label: "Years Experience" },
+  { value: "2,500+", label: "Projects Done" },
+  { value: "1,800+", label: "Happy Clients" },
+  { value: "10 Yr", label: "Warranty" },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Luxury Villa Terrace",
+    category: "Terrace Waterproofing",
+    location: "Bandra, Mumbai",
+    image:
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+  },
+  {
+    id: 2,
+    title: "Corporate Tower Roof",
+    category: "Commercial Roofing",
+    location: "BKC, Mumbai",
+    image:
+      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
+  },
+  {
+    id: 3,
+    title: "Residential Complex",
+    category: "Basement Protection",
+    location: "Pune",
+    image:
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+  },
+  {
+    id: 4,
+    title: "Heritage Building Restoration",
+    category: "Structural Waterproofing",
+    location: "South Mumbai",
+    image:
+      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800&q=80",
+  },
+  {
+    id: 5,
+    title: "Resort Swimming Pool",
+    category: "Pool Waterproofing",
+    location: "Goa",
+    image:
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
+  },
+  {
+    id: 6,
+    title: "Modern Apartment Block",
+    category: "Full Building Solution",
+    location: "Thane",
+    image:
+      "https://images.unsplash.com/photo-1460317442991-ec0ba1366c9c?w=800&q=80",
+  },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Rajesh Mehta",
+    role: "Homeowner, Andheri",
+    quote:
+      "Our terrace was leaking for years. AMAR WATER PROOFING fixed it completely in just 3 days. Three monsoons later — not a single drop inside!",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Priya Sharma",
+    role: "Architect, Design Studio",
+    quote:
+      "I recommend them to all my clients. Their technical knowledge, quality materials, and clean execution set them apart from every other contractor.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Vikram Patel",
+    role: "Builder, Patel Constructions",
+    quote:
+      "We've partnered on 12 commercial projects. They always deliver on time, within budget, and their 10-year warranty gives our buyers real peace of mind.",
+    rating: 5,
+  },
+];
+
+export const whyChooseUs = [
+  {
+    title: "Certified Materials",
+    description: "We use only ISI-marked, internationally certified waterproofing products.",
+  },
+  {
+    title: "Expert Team",
+    description: "Skilled technicians trained in the latest application techniques and safety standards.",
+  },
+  {
+    title: "10-Year Warranty",
+    description: "Every project backed by our comprehensive workmanship and material warranty.",
+  },
+  {
+    title: "Free Inspection",
+    description: "Complimentary site survey and detailed quotation with no hidden charges.",
+  },
+];
+
+export const processSteps = [
+  { step: "01", title: "Site Inspection", description: "Free on-site assessment and moisture mapping" },
+  { step: "02", title: "Custom Solution", description: "Tailored system design based on structure type" },
+  { step: "03", title: "Expert Application", description: "Professional installation with quality checks" },
+  { step: "04", title: "Quality Assurance", description: "Water test, documentation, and warranty handover" },
+];
