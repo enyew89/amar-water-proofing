@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     icon: "/logo.png",
     apple: "/logo.png",
   },
+  verification: {
+    google: "bwPFyOuVSnrlt92rtvUNfkohAfNa987auOvAfz17OXg",
+  },
   keywords: [
     "waterproofing",
     "roof waterproofing",
