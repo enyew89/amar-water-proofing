@@ -1,8 +1,12 @@
+// Canonical public URL of the site (single source of truth for SEO tags).
+// If you buy a custom domain later, change only this line.
+export const siteUrl = "https://amar-water-proofing.vercel.app";
+
 export const company = {
   name: "AMAR WATER PROOFING",
   tagline: "Protecting Your Property, Drop by Drop",
   description:
-    "Leading waterproofing specialists delivering premium protection for roofs, terraces, basements, and commercial structures. Trusted by homeowners and builders across the region.",
+    "Ethiopia's trusted waterproofing specialists, protecting roofs, terraces, basements, and commercial structures for universities, contractors, and government institutions across the country.",
   phone: "+251 911 524 838",
   email: "info@amarwaterproofing.com",
   address: "Lideta Ahmed Building, 9th Floor, Addis Ababa, Ethiopia",
