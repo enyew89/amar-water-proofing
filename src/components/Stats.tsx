@@ -1,7 +1,31 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { motion, useInView, animate } from "framer-motion";
 import { stats } from "@/data/content";
+
+function Counter({ value, suffix }: { value: number; suffix: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-40px" });
+  const [display, setDisplay] = useState(0);
+
+  useEffect(() => {
+    if (!inView) return;
+    const controls = animate(0, value, {
+      duration: 2,
+      ease: "easeOut",
+      onUpdate: (v) => setDisplay(Math.round(v)),
+    });
+    return () => controls.stop();
+  }, [inView, value]);
+
+  return (
+    <span ref={ref}>
+      {display.toLocaleString()}
+      {suffix}
+    </span>
+  );
+}
 
 export default function Stats() {
   return (
@@ -22,7 +46,7 @@ export default function Stats() {
               className="text-center"
             >
               <p className="font-display text-4xl font-extrabold text-accent-400 sm:text-5xl">
-                {stat.value}
+                <Counter value={stat.value} suffix={stat.suffix} />
               </p>
               <p className="mt-2 text-sm font-medium text-white/70 sm:text-base">
                 {stat.label}

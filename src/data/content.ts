@@ -7,7 +7,7 @@ export const company = {
   email: "info@amarwaterproofing.com",
   address: "123 Industrial Area, Sector 5, Mumbai, Maharashtra 400001",
   yearsExperience: 15,
-  projectsCompleted: 2500,
+  projectsCompleted: 4000,
   happyClients: 1800,
   warrantyYears: 10,
 };
@@ -79,10 +79,23 @@ export const services = [
 ];
 
 export const stats = [
-  { value: "15+", label: "Years Experience" },
-  { value: "2,500+", label: "Projects Done" },
-  { value: "1,800+", label: "Happy Clients" },
-  { value: "10 Yr", label: "Warranty" },
+  { value: 15, suffix: "+", label: "Years Experience" },
+  { value: 4000, suffix: "+", label: "Projects Done" },
+  { value: 1800, suffix: "+", label: "Happy Clients" },
+  { value: 10, suffix: " Yr", label: "Warranty" },
+];
+
+export const contractors = [
+  "African Union",
+  "Haramaya University",
+  "Bahir Dar Stadium",
+  "Bahirdar Airport",
+  "National Palace",
+  "Prosperity Party HQ",
+  "SATCON",
+  "Tewodros Collider",
+  "Elilta Construction",
+  "Elhadar Group",
 ];
 
 export const projects = [
